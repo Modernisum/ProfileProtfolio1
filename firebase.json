@@ -1,0 +1,34 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "modernisum-fe2ce",
+          "appId": "1:474590834730:android:6770c5ab2be84c527d9353",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "modernisum-fe2ce",
+          "configurations": {
+            "android": "1:474590834730:android:6770c5ab2be84c527d9353",
+            "ios": "1:474590834730:ios:169008969f8d15457d9353",
+            "web": "1:474590834730:web:bd92956eb64f26117d9353"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "asia-east1"
+    }
+  }
+}

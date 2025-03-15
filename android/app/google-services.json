@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474590834730",
+    "project_id": "modernisum-fe2ce",
+    "storage_bucket": "modernisum-fe2ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474590834730:android:6770c5ab2be84c527d9353",
+        "android_client_info": {
+          "package_name": "com.example.flutter_portfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKJxjwZiz2ST_7Ic-xVtIzfc4lj9YNiqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
