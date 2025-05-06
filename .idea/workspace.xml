@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ba4d07-337c-4d17-aeaa-7ac65de85ae3" name="Changes" comment="zdfgdf" />
+    <list default="true" id="b2ba4d07-337c-4d17-aeaa-7ac65de85ae3" name="Changes" comment="zdfgdf">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +19,7 @@
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../shivankportfolio\exportToHTML" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -27,8 +29,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Modernisum/shivankportfolio.git&quot;,
-    &quot;accountId&quot;: &quot;fb9d123f-2261-47de-a66c-26d48636e196&quot;
+    &quot;url&quot;: &quot;https://github.com/Modernisum/ProfileProtfolio1.git&quot;,
+    &quot;accountId&quot;: &quot;c08845fd-303b-42b1-a743-c69f0ad546c5&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -50,6 +52,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ok/StudioProjects/profile_porfolio&quot;,
