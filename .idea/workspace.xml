@@ -4,7 +4,54 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ba4d07-337c-4d17-aeaa-7ac65de85ae3" name="Changes" comment="zdfgdf" />
+    <list default="true" id="b2ba4d07-337c-4d17-aeaa-7ac65de85ae3" name="Changes" comment="zdfgdf">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/.filecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/app.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/app.dill.deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/dart2js.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/dart2js.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/flutter_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/main.dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/main.dart.js.deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/outputs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/service_worker.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_entrypoint.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_plugin_registrant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_release_bundle.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_resources.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_service_worker.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_static_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/8b0b4afda4c478ef92653aff7cd99dd1/web_templated_files.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.LmZpcmViYXNlXG1vZGVybmlzdW0tZmUyY2VcaG9zdGluZw.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.LmZpcmViYXNlXG1vZGVybmlzdW0tZmUyY2VcaG9zdGluZw.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/NOTICES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_service_worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_service_worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProfileProtfolio1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProfileProtfolio1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dc7d77b3daac3e0d6925918e46b4e2b9/_composite.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dc7d77b3daac3e0d6925918e46b4e2b9/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dc7d77b3daac3e0d6925918e46b4e2b9/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/splash/componenets/animated_loading_text.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/splash/splash_view.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-maskable-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/icons/Icon-maskable-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/manifest.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +64,7 @@
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../shivankportfolio\exportToHTML" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -27,8 +74,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Modernisum/shivankportfolio.git&quot;,
-    &quot;accountId&quot;: &quot;fb9d123f-2261-47de-a66c-26d48636e196&quot;
+    &quot;url&quot;: &quot;https://github.com/Modernisum/ProfileProtfolio1.git&quot;,
+    &quot;accountId&quot;: &quot;c08845fd-303b-42b1-a743-c69f0ad546c5&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -50,13 +97,14 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ok/StudioProjects/profile_porfolio&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ok/StudioProjects/ProfileProtfolio1&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
@@ -64,12 +112,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ok\StudioProjects\SchoolMate-App\Flutter-Responsive-Portfolio-WebApp\assets\images" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
-      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,6 +123,17 @@
       <updated>1738464698203</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
