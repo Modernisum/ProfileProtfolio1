@@ -5,59 +5,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2ba4d07-337c-4d17-aeaa-7ac65de85ae3" name="Changes" comment="zdfgdf">
-      <change afterPath="$PROJECT_DIR$/assets/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/modernschool.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Affiliation Database" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Affiliation Database" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/BrowsingTopicsState" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/BrowsingTopicsState" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/DIPS" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/DIPS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Rules/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Rules/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension State/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension State/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/History" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/History" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Local Storage/leveldb/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Local Storage/leveldb/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network Action Predictor" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network Action Predictor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Cookies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Network Persistent State" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Network Persistent State" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Reporting and NEL" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Reporting and NEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/TransportSecurity" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/TransportSecurity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Trust Tokens" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Network/Trust Tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Preferences" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Secure Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Secure Preferences" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/ScriptCache/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/ScriptCache/index-dir/the-real-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Shared Dictionary/cache/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Shared Dictionary/cache/index-dir/the-real-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Web Data" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Web Data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/WebStorage/QuotaManager" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/WebStorage/QuotaManager" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/passkey_enclave_state" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/passkey_enclave_state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/shared_proto_db/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/shared_proto_db/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/AssetManifest.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/AssetManifest.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/AssetManifest.bin.json" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/AssetManifest.bin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_service_worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/flutter_service_worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/icons/Icon-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/icons/Icon-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/icons/Icon-maskable-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/icons/Icon-maskable-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/icons/Icon-maskable-512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/modernisum-fe2ce/hosting/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/77d497f1528cc4073a4828dbfb6f55b9/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/77d497f1528cc4073a4828dbfb6f55b9/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/77d497f1528cc4073a4828dbfb6f55b9/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/77d497f1528cc4073a4828dbfb6f55b9/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/77d497f1528cc4073a4828dbfb6f55b9/web_release_bundle.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/77d497f1528cc4073a4828dbfb6f55b9/web_release_bundle.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/profile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/firebase_options.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/project_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/project_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/intro/components/social_media_coloumn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/intro/components/social_media_coloumn.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/5c41a4ed82efba3226262de1c3dfc81a/_composite.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/5c41a4ed82efba3226262de1c3dfc81a/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/5c41a4ed82efba3226262de1c3dfc81a/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cache.dill.track.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.bin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/behance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/bloc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/dart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/dribble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/firebase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/flutter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/Profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/alarm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/cui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/doctor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/image1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/recipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/assets/images/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/last_build_run.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/.last_build_id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/AssetManifest.bin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/behance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/bloc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/dart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/dribble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/firebase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/flutter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/alarm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/coffee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/cui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/doctor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/image1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/modernschool.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/recipe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/assets/images/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/chromium/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/canvaskit/skwasm.worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/flutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/flutter_bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/flutter_service_worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/icons/Icon-maskable-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/main.dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/version.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
