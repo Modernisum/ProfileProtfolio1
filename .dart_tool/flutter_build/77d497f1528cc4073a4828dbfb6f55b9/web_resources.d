@@ -1,0 +1,1 @@
+ build\\web\\favicon.png build\\web\\icons\\Icon-maskable-512.png build\\web\\manifest.json:  C:\\Users\\ok\\StudioProjects\\ProfileProtfolio1\\web\\favicon.png C:\\Users\\ok\\StudioProjects\\ProfileProtfolio1\\web\\icons\\Icon-maskable-512.png C:\\Users\\ok\\StudioProjects\\ProfileProtfolio1\\web\\index.html C:\\Users\\ok\\StudioProjects\\ProfileProtfolio1\\web\\manifest.json

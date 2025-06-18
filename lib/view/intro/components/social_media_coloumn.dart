@@ -11,15 +11,15 @@ class SocialMediaIconColumn extends StatelessWidget {
       children: [
         SocialMediaIcon(
             icon: 'assets/icons/linkedin.svg',
-            onTap: () =>
-                launchUrl(Uri.parse('www.linkedin.com/in/shivank--kumar'))),
+            onTap: () => launchUrl(
+                Uri.parse('https://www.linkedin.com/in/shivank--kumar/'))),
         SocialMediaIcon(
           icon: 'assets/icons/github.svg',
-          onTap: () => launchUrl(Uri.parse('https://github.com/SHIVANK47')),
+          onTap: () => launchUrl(Uri.parse('https://github.com/Modernisum')),
         ),
         SocialMediaIcon(
           icon: 'assets/icons/dribble.svg',
-          onTap: () => launchUrl(Uri.parse('wwww.modernisum.com')),
+          onTap: () => launchUrl(Uri.parse('http://modernisum.com/')),
         ),
         //const SocialMediaIcon(icon: 'assets/icons/twitter.svg'),
       ],

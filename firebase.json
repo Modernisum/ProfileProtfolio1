@@ -1,34 +1,13 @@
 {
-  "flutter": {
-    "platforms": {
-      "android": {
-        "default": {
-          "projectId": "modernisum-fe2ce",
-          "appId": "1:474590834730:android:6770c5ab2be84c527d9353",
-          "fileOutput": "android/app/google-services.json"
-        }
-      },
-      "dart": {
-        "lib/firebase_options.dart": {
-          "projectId": "modernisum-fe2ce",
-          "configurations": {
-            "android": "1:474590834730:android:6770c5ab2be84c527d9353",
-            "ios": "1:474590834730:ios:169008969f8d15457d9353",
-            "web": "1:474590834730:web:bd92956eb64f26117d9353"
-          }
-        }
-      }
-    }
-  },
-  "hosting": {
-    "source": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "frameworksBackend": {
-      "region": "europe-west1"
-    }
-  }
+  "type": "service_account",
+  "project_id": "modernisumweb",
+  "private_key_id": "97142ab08c34a8cb5f82531b474e5caeb688e119",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYItZIAc30USIm\nyBS08fCTsTQ1IwoaklIGjruRINFThleb1M4ybhxI3zbIjsY4YhnnWuMU77+LA6ps\ncfpSPrpqYOA/hinPA3mPZgqarcmrJvamfev5zSxU8tXOAf73KuzKKuVSf0UUIpbz\nE2HDNsTVjCMhOfAyHJb0MdWZI0uq6/M0gMUktKdTI0mZxoio7rlS86p4Z9pSCqBc\nfl5MD+GAK0KiNyvQAsoT5GuOoPzy+4MHHVpPbbGDKQHZnkan5S5p+Tm0AAJQ1hNT\ntzmleHn88oh/uvcwcLoII1pzUWvtezmIwM8XaOs966RqIXGlNayKwI6+z7aUUtZ6\nIfkXrpTNAgMBAAECggEAGsw+9eXwtjvKWIqdiU3SE/h4Tk+jihCIRl3eGFa8Usx+\nV542rqlZAm6tPof36w0RbyOlXMwuWzsUyftbxmTBUj05W0b0L2xGidFku9w+UTqJ\n1wdtLFIUZA1JFbtznwuzGOHhVa2H+sDLJyTzuHOK9iXjmSleLv29IwEmyE+dqyRP\nH7Uw2+AqUgAUjNnaQ6JiUpRAH745gYSA3fllyaT71FnLLBy4WXj8PKTfdACSNw3g\n0htXs0+U++ixl0M6zeJ5mqjXItOBoQm05ZO/xcuVz+z0XvEhzEA7Ypmy/TpI1ND7\nhgwKhCOZ9SC3fXjJhDbeSj6AVob9WVX2MD2GQgQVdQKBgQDrpLoE+EaIBhSmRKo8\nP7FPk/y5lSFIHpGTHx1eFr2M6Bydz0v2OYYzHJfFbs0cmqJrz+oGiUiyjkycfefu\naLL5iduwyZ/4O6KZUKMO58gOJ3Wc/Z3jzfuM00DPYCSZ+siULx7lL+cewRbySn5y\n+k0hnZtGI+alZYT4M2kcpaiYCwKBgQDqzrQCH0VRJbnnR9g+awE3+sOmRf2+lDF4\ncnTotvOJo1Zf/6uAgDvISH6/3jD040L3sKMU+WepdQiqdfjhoxRbFj+GV7WKWA4K\nQ9U6z/t6j+6aH5IdaYOQnEgzwWvUFlNSXV/RuUZbKWpjexu5BTCcSDkU/QR6/4wX\nECdgNtiVhwKBgQDpDCYI6j5fIpxjf/9YzKkgibxlEg8zU0An35rcxeK7K4e5rx1y\nK5wEip+zXAyw4GIH/D14L2fdZ4xvLLoneBahYm0Kn619BAWgWTaadDLPhMj19YGk\nnb/Nm9Q6A9zPCE4894k3ozORn+eAwpniPpfvyf6Z1MG0C/4Atl+bPF7L1wKBgBay\nemYGHc41Rl4b7MRD1a9Slxz4gQmuC4YoEjL4lFwGpO/MqAhY3O6ES3RChxr06OFG\nes0pOqL/xCGuG6u79tjDMsrKqarAzkKhwffYaOe1CAxv5tDfBS+yW6xdEw5CRjWc\n/wknzqw7OaR6HvjojoVc2d+0gX1ePG1yS0waoR77AoGANsFjr6XxUKb7dMuy/5f2\n5LHWZdmIeOte2gbW1Xk42bD61NvrShWAssaAnuioKSQQjiktChXV82ar54sv+xrk\n8uexnO1UY1LpHqYW+I/mdaVlCTHbEgQv4ylB/Zm+rSxNbN5JSXg1cCLhx/9YnNt+\nXg8iZiAqgqmaGXYqfcUAHQc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@modernisumweb.iam.gserviceaccount.com",
+  "client_id": "117938593283024346212",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40modernisumweb.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
 }
