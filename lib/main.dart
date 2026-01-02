@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/res/constants.dart';
+import 'package:flutter_portfolio/view%20model/getx_controllers/project_detail_binding.dart';
 import 'package:flutter_portfolio/view/home/home.dart';
+import 'package:flutter_portfolio/view/projects/components/projects_details.dart'; // ✅ Keep
+import 'package:get/get.dart'; // ✅ Simplified import
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -8,13 +11,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key}); // ✅ Modern super.key
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Shivank Profile ', // Add a title for your app
+      title: 'Shivank Profile',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: bgColor,
@@ -22,13 +25,32 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white)
             .copyWith(
-              bodyLarge: const TextStyle(
-                  color: bodyTextColor), // Use bodyLarge instead of bodyText1
-              bodyMedium: const TextStyle(
-                  color: bodyTextColor), // Use bodyMedium instead of bodyText2
+              bodyLarge: const TextStyle(color: bodyTextColor),
+              bodyMedium: const TextStyle(color: bodyTextColor),
             ),
       ),
-      home: const HomePage(), // Add const here for better performance
+
+      // ✅ COMPLETE ROUTES
+      getPages: [
+        GetPage(
+          name: '/',
+          page: () => const HomePage(),
+        ),
+        GetPage(
+          name: '/project-details',
+          page: () {
+            final projectId = Get.arguments as String? ?? '';
+            return ProjectDetailsView(projectId: projectId);
+          },
+          binding: ProjectDetailBinding(),
+        ),
+        // ✅ Add more routes as needed
+        // GetPage(name: '/about', page: () => AboutView()),
+      ],
+
+      // ✅ Default home route
+      home: const HomePage(),
+      initialRoute: '/',
     );
   }
 }

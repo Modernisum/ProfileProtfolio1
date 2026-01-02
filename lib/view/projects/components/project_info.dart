@@ -17,16 +17,21 @@ class ProjectStack extends StatelessWidget {
         controller.onHover(index, value);
       },
       onTap: () {
-        ImageViewer(context,projectList[index].image);
+        Get.toNamed(
+          '/project-details',
+          arguments: projectList[index].id,
+        );
       },
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
-          padding: const EdgeInsets.only(left: defaultPadding,right: defaultPadding,top: defaultPadding),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              color: bgColor),
-          duration: const Duration(milliseconds: 500),
-          child: ProjectDetail(index: index,),
+        padding: const EdgeInsets.only(
+            left: defaultPadding, right: defaultPadding, top: defaultPadding),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30), color: bgColor),
+        duration: const Duration(milliseconds: 500),
+        child: ProjectDetail(
+          index: index,
+        ),
       ),
     );
   }
