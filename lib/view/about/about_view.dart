@@ -38,7 +38,6 @@ class _AboutViewState extends State<AboutView> {
     super.dispose();
   }
 
-  /// Auto-detect which section is visible and switch left tab
   void _onScroll() {
     for (int i = 0; i < _sectionKeys.length; i++) {
       final context = _sectionKeys[i].currentContext;
@@ -49,7 +48,7 @@ class _AboutViewState extends State<AboutView> {
         final position = renderBox.localToGlobal(Offset.zero);
         final size = renderBox.size;
 
-        if (position.dy < 250 && position.dy + size.height > 100) {
+        if (position.dy <= 150 && position.dy + size.height > 150) {
           if (activeTab != i) {
             setState(() => activeTab = i);
           }
@@ -59,33 +58,56 @@ class _AboutViewState extends State<AboutView> {
     }
   }
 
-  /// Scroll smoothly to a section when tapping sidebar tab
   void _scrollToSection(int index) {
-    setState(() => activeTab = index);
     final context = _sectionKeys[index].currentContext;
     if (context != null) {
       try {
         final RenderBox renderBox = context.findRenderObject() as RenderBox;
         final position = renderBox.localToGlobal(Offset.zero).dy;
-        _scrollController.animateTo(
+
+        _scrollController.removeListener(_onScroll);
+
+        _scrollController
+            .animateTo(
           _scrollController.offset + position - 150,
           duration: const Duration(milliseconds: 500),
           curve: Curves.easeInOut,
-        );
-      } catch (_) {}
+        )
+            .then((_) {
+          _scrollController.addListener(_onScroll);
+          setState(() => activeTab = index);
+        });
+      } catch (_) {
+        _scrollController.addListener(_onScroll);
+      }
+    } else {
+      setState(() => activeTab = index);
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final isMobile = Responsive.isMobile(context);
+    final isTablet = Responsive.isTablet(context);
+
     return Scaffold(
+      backgroundColor: Colors.grey[950],
       body: Row(
         children: [
-          // LEFT SIDEBAR (Desktop only)
-          if (!Responsive.isMobile(context))
+          // ✅ FIXED: LEFT SIDEBAR - Desktop & Tablet ONLY (NOT MOBILE)
+          if (!isMobile)
             Container(
-              width: 250,
+              width: isTablet ? 80 : 250,
               height: MediaQuery.of(context).size.height,
+              decoration: BoxDecoration(
+                color: Colors.grey[900],
+                border: Border(
+                  right: BorderSide(
+                    color: Colors.grey[800]!,
+                    width: 1,
+                  ),
+                ),
+              ),
               child: SingleChildScrollView(
                 child: Column(
                   children: [
@@ -95,62 +117,67 @@ class _AboutViewState extends State<AboutView> {
                       final isActive = activeTab == index;
                       return GestureDetector(
                         onTap: () => _scrollToSection(index),
-                        child: AnimatedContainer(
-                          duration: Duration(milliseconds: 200),
-                          margin: EdgeInsets.only(bottom: 2),
-                          padding: EdgeInsets.all(defaultPadding),
-                          decoration: BoxDecoration(
-                            color: isActive
-                                ? Colors.black.withOpacity(0.2)
-                                : Colors.transparent,
-                            borderRadius: BorderRadius.circular(12),
-                            border: isActive
-                                ? Border(
-                                    left: BorderSide(
-                                        color: Colors.blue, width: 4),
-                                  )
-                                : null,
-                            boxShadow: isActive
-                                ? [
-                                    BoxShadow(
-                                      color: Colors.blue.withOpacity(0.3),
-                                      blurRadius: 20,
-                                      spreadRadius: 0,
-                                      offset: Offset(0, 4),
+                        child: Tooltip(
+                          message: isTablet ? tab['title'] : '',
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 200),
+                            margin: EdgeInsets.only(bottom: 2),
+                            padding: EdgeInsets.all(defaultPadding),
+                            decoration: BoxDecoration(
+                              color: isActive
+                                  ? Colors.black.withOpacity(0.2)
+                                  : Colors.transparent,
+                              borderRadius: BorderRadius.circular(12),
+                              boxShadow: isActive
+                                  ? [
+                                      BoxShadow(
+                                        color: Colors.blue.withOpacity(0.3),
+                                        blurRadius: 20,
+                                        spreadRadius: 0,
+                                        offset: const Offset(0, 4),
+                                      ),
+                                    ]
+                                  : [],
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.all(6),
+                                  decoration: BoxDecoration(
+                                    color: isActive
+                                        ? Colors.blue.withOpacity(0.2)
+                                        : Colors.transparent,
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Icon(
+                                    tab['icon'],
+                                    color: isActive
+                                        ? Colors.blue
+                                        : Colors.grey[400],
+                                    size: 20,
+                                  ),
+                                ),
+                                if (!isTablet) ...[
+                                  SizedBox(width: 12),
+                                  Expanded(
+                                    child: Text(
+                                      tab['title'],
+                                      style: TextStyle(
+                                        color: isActive
+                                            ? Colors.blue
+                                            : Colors.grey[400],
+                                        fontWeight: isActive
+                                            ? FontWeight.w600
+                                            : FontWeight.normal,
+                                        fontSize: 14,
+                                      ),
+                                      overflow: TextOverflow.ellipsis,
                                     ),
-                                  ]
-                                : [],
-                          ),
-                          child: Row(
-                            children: [
-                              Container(
-                                padding: EdgeInsets.all(6),
-                                decoration: BoxDecoration(
-                                  color: isActive
-                                      ? Colors.blue.withOpacity(0.2)
-                                      : Colors.transparent,
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Icon(
-                                  tab['icon'],
-                                  color:
-                                      isActive ? Colors.blue : Colors.grey[400],
-                                  size: 20,
-                                ),
-                              ),
-                              SizedBox(width: 12),
-                              Text(
-                                tab['title'],
-                                style: TextStyle(
-                                  color:
-                                      isActive ? Colors.blue : Colors.grey[400],
-                                  fontWeight: isActive
-                                      ? FontWeight.w600
-                                      : FontWeight.normal,
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ],
+                                  ),
+                                ],
+                              ],
+                            ),
                           ),
                         ),
                       );
@@ -160,58 +187,13 @@ class _AboutViewState extends State<AboutView> {
               ),
             ),
 
-          // RIGHT CONTENT AREA
+          // ✅ RIGHT CONTENT AREA - Takes full width on mobile
           Expanded(
             child: SingleChildScrollView(
               controller: _scrollController,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // HEADER
-                  Container(
-                    width: double.infinity,
-                    margin: EdgeInsets.all(defaultPadding),
-                    padding: EdgeInsets.all(defaultPadding * 2),
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [Colors.blue.shade700, Colors.blue.shade400],
-                      ),
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.blue.withOpacity(0.3),
-                          blurRadius: 20,
-                          spreadRadius: 0,
-                          offset: Offset(0, 10),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      children: [
-                        Text(
-                          'About Me',
-                          style: TextStyle(
-                            fontSize: Responsive.isMobile(context) ? 28 : 36,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(height: defaultPadding),
-                        Text(
-                          'Full-Stack Developer | Flutter Expert | Agra, India',
-                          style: TextStyle(
-                            fontSize: Responsive.isMobile(context) ? 16 : 18,
-                            color: Colors.white70,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  // SECTIONS
                   Padding(
                     padding: EdgeInsets.all(defaultPadding),
                     child: Column(
@@ -250,14 +232,13 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // PERSONAL SECTION
   Widget _buildPersonalSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Personal Information',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -277,14 +258,14 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // ACADEMIC SECTION
   Widget _buildAcademicSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding * 3),
         Text(
           'Academic Information',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -306,14 +287,14 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // PHYSICAL SECTION
   Widget _buildPhysicalSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding * 3),
         Text(
           'Physical Information',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -332,14 +313,14 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // ADDRESS SECTION
   Widget _buildAddressSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding * 3),
         Text(
           'Address Information',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -362,14 +343,14 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // GALLERY SECTION
   Widget _buildGallerySection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding * 3),
         Text(
           'Photo Gallery',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -379,7 +360,7 @@ class _AboutViewState extends State<AboutView> {
         SizedBox(height: defaultPadding * 2),
         GridView.builder(
           shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: Responsive.isMobile(context) ? 2 : 3,
             crossAxisSpacing: defaultPadding,
@@ -398,7 +379,7 @@ class _AboutViewState extends State<AboutView> {
                   BoxShadow(
                     color: Colors.black.withOpacity(0.2),
                     blurRadius: 8,
-                    offset: Offset(0, 4),
+                    offset: const Offset(0, 4),
                   ),
                 ],
               ),
@@ -418,15 +399,15 @@ class _AboutViewState extends State<AboutView> {
                       bottom: 8,
                       right: 8,
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 4),
                         decoration: BoxDecoration(
                           color: Colors.blue.withOpacity(0.8),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
                           '${index + 1}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
@@ -444,7 +425,6 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // HOBBIES SECTION
   Widget _buildHobbiesSection() {
     final hobbies = [
       'Photography',
@@ -461,9 +441,10 @@ class _AboutViewState extends State<AboutView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding * 3),
         Text(
           'Hobbies & Interests',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -488,7 +469,7 @@ class _AboutViewState extends State<AboutView> {
                   BoxShadow(
                     color: Colors.blue.withOpacity(0.1),
                     blurRadius: 4,
-                    offset: Offset(0, 2),
+                    offset: const Offset(0, 2),
                   ),
                 ],
               ),
@@ -507,14 +488,14 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // ACHIEVEMENTS SECTION
   Widget _buildAchievementsSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: defaultPadding * 3),
         Text(
           'Achievements & Awards',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -530,7 +511,6 @@ class _AboutViewState extends State<AboutView> {
     );
   }
 
-  // HELPER WIDGETS
   Widget _buildInfoCard(String label, String value) {
     return Container(
       width: double.infinity,
@@ -544,7 +524,7 @@ class _AboutViewState extends State<AboutView> {
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
             blurRadius: 8,
-            offset: Offset(0, 4),
+            offset: const Offset(0, 4),
           ),
         ],
       ),
@@ -559,7 +539,8 @@ class _AboutViewState extends State<AboutView> {
               fontSize: 16,
             ),
           ),
-          Expanded(
+          SizedBox(width: 12),
+          Flexible(
             child: Text(
               value,
               style: TextStyle(
@@ -594,7 +575,7 @@ class _AboutViewState extends State<AboutView> {
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
             blurRadius: 8,
-            offset: Offset(0, 4),
+            offset: const Offset(0, 4),
           ),
         ],
       ),
@@ -603,7 +584,7 @@ class _AboutViewState extends State<AboutView> {
         children: [
           Text(
             degree,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
               fontSize: 18,
@@ -618,29 +599,40 @@ class _AboutViewState extends State<AboutView> {
               fontWeight: FontWeight.w500,
             ),
           ),
-          SizedBox(height: 8),
+          SizedBox(height: 12),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                institution,
-                style: TextStyle(
-                  color: Colors.grey[400],
-                  fontSize: 14,
+              Flexible(
+                flex: 2,
+                child: Text(
+                  institution,
+                  style: TextStyle(
+                    color: Colors.grey[400],
+                    fontSize: 14,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                decoration: BoxDecoration(
-                  color: Colors.blue.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  duration,
-                  style: TextStyle(
-                    color: Colors.blue[300],
-                    fontSize: 13,
-                    fontWeight: FontWeight.w500,
+              SizedBox(width: 12),
+              Flexible(
+                flex: 1,
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    duration,
+                    style: TextStyle(
+                      color: Colors.blue[300],
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ),
@@ -670,7 +662,7 @@ class _AboutViewState extends State<AboutView> {
             color: Colors.blue.withOpacity(0.4),
             blurRadius: 20,
             spreadRadius: 0,
-            offset: Offset(0, 8),
+            offset: const Offset(0, 8),
           ),
         ],
       ),
@@ -683,7 +675,7 @@ class _AboutViewState extends State<AboutView> {
               shape: BoxShape.circle,
               border: Border.all(color: Colors.amber, width: 2),
             ),
-            child: Icon(
+            child: const Icon(
               Icons.emoji_events,
               color: Colors.amber,
               size: 28,
@@ -696,7 +688,7 @@ class _AboutViewState extends State<AboutView> {
               children: [
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     fontSize: 18,
@@ -707,10 +699,11 @@ class _AboutViewState extends State<AboutView> {
                 SizedBox(height: 4),
                 Text(
                   '$issuer • $year',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 14,
                   ),
+                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),

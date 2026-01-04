@@ -128,7 +128,7 @@ class _ProjectDetailsViewState extends State<ProjectDetailsView> {
               ),
 
               Padding(
-                padding: EdgeInsets.all(defaultPadding),
+                padding: const EdgeInsets.all(defaultPadding),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -162,7 +162,7 @@ class _ProjectDetailsViewState extends State<ProjectDetailsView> {
                         ),
                         // Project Level Badge
                         Container(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: defaultPadding,
                             vertical: defaultPadding / 2,
                           ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/res/constants.dart';
+import 'package:flutter_portfolio/view%20model/getx_controllers/certificate_detail_binding.dart';
 import 'package:flutter_portfolio/view%20model/getx_controllers/project_detail_binding.dart';
+import 'package:flutter_portfolio/view/certifications/components/certificate_page.dart';
 import 'package:flutter_portfolio/view/home/home.dart';
 import 'package:flutter_portfolio/view/projects/components/projects_details.dart'; // ✅ Keep
 import 'package:get/get.dart'; // ✅ Simplified import
@@ -37,6 +39,14 @@ class MyApp extends StatelessWidget {
           page: () => const HomePage(),
         ),
         GetPage(
+          name: '/certificate-details',
+          page: () {
+            final certificateId = Get.arguments as String? ?? '';
+            return CertificateDetailsView(certificateId: certificateId);
+          },
+          binding: CertificateDetailBinding(),
+        ),
+        GetPage(
           name: '/project-details',
           page: () {
             final projectId = Get.arguments as String? ?? '';
@@ -44,6 +54,7 @@ class MyApp extends StatelessWidget {
           },
           binding: ProjectDetailBinding(),
         ),
+
         // ✅ Add more routes as needed
         // GetPage(name: '/about', page: () => AboutView()),
       ],

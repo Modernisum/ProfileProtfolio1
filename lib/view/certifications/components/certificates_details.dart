@@ -17,7 +17,10 @@ class CertificateStack extends StatelessWidget {
       onHover: (value) {
         controller.onHover(index, value);
       },
-      onTap: () {},
+      onTap: () {
+        Get.toNamed('/certificate-details',
+            arguments: certificateList[index].id);
+      },
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
           padding: const EdgeInsets.all(defaultPadding),
@@ -48,7 +51,7 @@ class CertificateStack extends StatelessWidget {
                       style: const TextStyle(color: Colors.amber),
                     ),
                     Text(
-                      certificateList[index].date,
+                      certificateList[index].completeDate,
                       style: const TextStyle(color: Colors.grey, fontSize: 12),
                     ),
                   ],
@@ -65,7 +68,7 @@ class CertificateStack extends StatelessWidget {
                       ),
                       children: [
                         TextSpan(
-                          text: certificateList[index].skills,
+                          text: certificateList[index].skillsUsed.join(', '),
                           style: const TextStyle(
                               color: Colors.grey,
                               overflow: TextOverflow.ellipsis),
@@ -77,14 +80,14 @@ class CertificateStack extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    launchUrl(Uri.parse(certificateList[index].credential));
+                    launchUrl(Uri.parse(certificateList[index].accessLink));
                   },
                   child: Container(
                     height: 40,
                     width: 150,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        gradient: LinearGradient(colors: [
+                        gradient: const LinearGradient(colors: [
                           Color(0xFF36D1DC),
                           Color(0xFF5B86E5),
                         ]),

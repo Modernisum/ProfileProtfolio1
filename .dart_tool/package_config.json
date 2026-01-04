@@ -135,9 +135,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.1.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.6.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
     },
     {
       "name": "http_parser",
@@ -422,7 +422,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2026-01-02T17:38:38.603077Z",
+  "generated": "2026-01-03T11:12:27.698904Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///C:/Users/ok/Downloads/software/flutter_windows_3.24.3-stable/flutter",

@@ -2,15 +2,33 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/res/constants.dart';
 import 'package:flutter_portfolio/view%20model/controller.dart';
+import 'package:flutter_portfolio/view/intro/introduction.dart';
 import 'package:flutter_portfolio/view/main/components/navigation_bar.dart';
 
 import '../../view model/responsive.dart';
 import 'components/drawer/drawer.dart';
 import 'components/navigation_button_list.dart';
 
-class MainView extends StatelessWidget {
+class MainView extends StatefulWidget {
   const MainView({super.key, required this.pages});
   final List<Widget> pages;
+
+  @override
+  State<MainView> createState() => _MainViewState();
+}
+
+class _MainViewState extends State<MainView> {
+  // ✅ NEW: Navigate to About page (index 1)
+  void _navigateToAbout() {
+    if (controller.page?.toInt() != 1) {
+      controller.animateToPage(
+        1, // About page index
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,10 +55,12 @@ class MainView extends StatelessWidget {
               flex: 9,
               child: PageView(
                 scrollDirection: Axis.vertical,
-                physics:
-                    const NeverScrollableScrollPhysics(), // never scroll page
                 controller: controller,
-                children: [...pages],
+                children: [
+                  // ✅ Pass callback to Introduction page
+                  Introduction(onNavigateToAbout: _navigateToAbout),
+                  ...widget.pages.skip(1), // Rest of pages
+                ],
               ),
             )
           ],
