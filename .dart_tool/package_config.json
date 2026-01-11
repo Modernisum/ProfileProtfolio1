@@ -33,9 +33,9 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "2.18"
     },
     {
       "name": "crypto",
@@ -86,6 +86,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "flutter_inappwebview",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_inappwebview-5.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.2",
       "packageUri": "lib/",
@@ -129,9 +135,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.1.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.6.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
     },
     {
       "name": "http_parser",
@@ -141,13 +147,13 @@
     },
     {
       "name": "leak_tracker",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.7",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.5",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_flutter_testing",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.8",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.5",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -267,9 +273,9 @@
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.12.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.11.1",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "2.18"
     },
     {
       "name": "stream_channel",
@@ -279,9 +285,9 @@
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.3.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "2.18"
     },
     {
       "name": "term_glyph",
@@ -291,9 +297,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.3",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.2",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.2"
     },
     {
       "name": "typed_data",
@@ -339,9 +345,9 @@
     },
     {
       "name": "url_launcher_web",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/url_launcher_web-2.4.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/url_launcher_web-2.3.3",
       "packageUri": "lib/",
-      "languageVersion": "3.6"
+      "languageVersion": "3.3"
     },
     {
       "name": "url_launcher_windows",
@@ -375,7 +381,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.0",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.5",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -404,16 +410,22 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "youtube_player_flutter",
+      "rootUri": "file:///C:/Users/ok/AppData/Local/Pub/Cache/hosted/pub.dev/youtube_player_flutter-8.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_portfolio",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2025-06-17T16:46:56.671558Z",
+  "generated": "2026-01-03T11:12:27.698904Z",
   "generator": "pub",
-  "generatorVersion": "3.6.1",
+  "generatorVersion": "3.5.3",
   "flutterRoot": "file:///C:/Users/ok/Downloads/software/flutter_windows_3.24.3-stable/flutter",
-  "flutterVersion": "3.27.2",
+  "flutterVersion": "3.24.3",
   "pubCache": "file:///C:/Users/ok/AppData/Local/Pub/Cache"
 }

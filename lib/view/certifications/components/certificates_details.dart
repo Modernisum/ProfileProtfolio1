@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../model/certificate_model.dart';
 import '../../../res/constants.dart';
@@ -17,7 +16,10 @@ class CertificateStack extends StatelessWidget {
       onHover: (value) {
         controller.onHover(index, value);
       },
-      onTap: () {},
+      onTap: () {
+        Get.toNamed('/certificate-details',
+            arguments: certificateList[index].id);
+      },
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
           padding: const EdgeInsets.all(defaultPadding),
@@ -47,10 +49,6 @@ class CertificateStack extends StatelessWidget {
                       certificateList[index].organization,
                       style: const TextStyle(color: Colors.amber),
                     ),
-                    Text(
-                      certificateList[index].date,
-                      style: const TextStyle(color: Colors.grey, fontSize: 12),
-                    ),
                   ],
                 ),
                 const SizedBox(
@@ -65,57 +63,12 @@ class CertificateStack extends StatelessWidget {
                       ),
                       children: [
                         TextSpan(
-                          text: certificateList[index].skills,
+                          text: certificateList[index].skillsUsed.join(', '),
                           style: const TextStyle(
                               color: Colors.grey,
                               overflow: TextOverflow.ellipsis),
                         )
                       ]),
-                ),
-                const SizedBox(
-                  height: defaultPadding,
-                ),
-                InkWell(
-                  onTap: () {
-                    launchUrl(Uri.parse(certificateList[index].credential));
-                  },
-                  child: Container(
-                    height: 40,
-                    width: 150,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
-                        gradient: LinearGradient(colors: [
-                          Color(0xFF36D1DC),
-                          Color(0xFF5B86E5),
-                        ]),
-                        boxShadow: const [
-                          BoxShadow(
-                              color: Colors.blue,
-                              offset: Offset(0, -1),
-                              blurRadius: 5),
-                          BoxShadow(
-                              color: Colors.red,
-                              offset: Offset(0, 1),
-                              blurRadius: 5),
-                        ]),
-                    child: const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Credentials',
-                          style: TextStyle(color: Colors.white, fontSize: 10),
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Icon(
-                          CupertinoIcons.arrow_turn_up_right,
-                          color: Colors.white,
-                          size: 10,
-                        )
-                      ],
-                    ),
-                  ),
                 ),
               ],
             ),
