@@ -54,9 +54,6 @@ class MyApp extends StatelessWidget {
           },
           binding: ProjectDetailBinding(),
         ),
-
-        // ✅ Add more routes as needed
-        // GetPage(name: '/about', page: () => AboutView()),
       ],
 
       // ✅ Default home route

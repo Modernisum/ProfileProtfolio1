@@ -15,14 +15,16 @@ class ProjectsView extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (Responsive.isLargeMobile(context))
+          if (!Responsive.isMobile(context))
+            const TitleText(prefix: 'Latest', title: 'Projects'),
+          if (Responsive.isMobile(context))
             const SizedBox(
               height: defaultPadding,
             ),
-          const TitleText(prefix: 'Latest', title: 'Projects'),
-          const SizedBox(
-            height: defaultPadding,
-          ),
+          if (Responsive.isMobile(context))
+            const SizedBox(
+              height: defaultPadding,
+            ),
           Expanded(
               child: Responsive(
                   desktop: ProjectGrid(

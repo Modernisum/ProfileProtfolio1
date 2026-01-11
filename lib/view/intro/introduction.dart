@@ -16,7 +16,6 @@ class Introduction extends StatefulWidget {
 
 class _IntroductionState extends State<Introduction> {
   // ✅ NEW: Track drag direction
-  double _dragStartY = 0;
 
   // ✅ NEW: Handle vertical drag
   void _handleVerticalDrag(DragUpdateDetails details) {

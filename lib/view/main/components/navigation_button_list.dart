@@ -50,10 +50,8 @@ class _NavigationButtonListState extends State<NavigationButtonList> {
 
   void _navigateToPage(int pageIndex) {
     if (controller.page?.round() != pageIndex) {
-      // ✅ Update UI first
       setState(() => currentPage = pageIndex);
 
-      // ✅ Then animate page
       try {
         controller.animateToPage(
           pageIndex,
@@ -69,20 +67,15 @@ class _NavigationButtonListState extends State<NavigationButtonList> {
   @override
   Widget build(BuildContext context) {
     final navigationItems = [
-      if (!Responsive.isLargeMobile(context)) {'index': 0, 'label': 'Home'},
-      {
-        'index': !Responsive.isLargeMobile(context) ? 1 : 0,
-        'label': 'About us'
-      },
-      {
-        'index': !Responsive.isLargeMobile(context) ? 2 : 1,
-        'label': 'Projects'
-      },
-      {
-        'index': !Responsive.isLargeMobile(context) ? 3 : 2,
-        'label': 'Certifications'
-      },
+      {'index': 0, 'label': 'Home'},
+      {'index': 1, 'label': 'About us'},
+      {'index': 2, 'label': 'Projects'},
+      {'index': 3, 'label': 'Certifications'},
     ];
+
+    final filteredItems = Responsive.isLargeMobile(context)
+        ? navigationItems.skip(1).toList()
+        : navigationItems;
 
     return TweenAnimationBuilder(
       tween: Tween(begin: 0.0, end: 1.0),
@@ -92,8 +85,8 @@ class _NavigationButtonListState extends State<NavigationButtonList> {
           scale: value,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: List.generate(navigationItems.length, (i) {
-              final item = navigationItems[i];
+            children: List.generate(filteredItems.length, (i) {
+              final item = filteredItems[i];
               final index = item['index'] as int;
               final label = item['label'] as String;
               final isActive = currentPage == index;
@@ -120,8 +113,8 @@ class _NavigationButtonListState extends State<NavigationButtonList> {
                                 : Colors.transparent),
                         borderRadius: BorderRadius.circular(8),
                         border: isActive
-                            ? Border(
-                                bottom: const BorderSide(
+                            ? const Border(
+                                bottom: BorderSide(
                                   color: Colors.blue,
                                   width: 3.0,
                                 ),

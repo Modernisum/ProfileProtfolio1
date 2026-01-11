@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/view/projects/components/project_link.dart';
 import '../../../model/project_model.dart'; // ✅ Ensure this imports projectList
 import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
@@ -59,12 +58,7 @@ class ProjectDetail extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
 
-        const Spacer(),
-
         // Links
-        ProjectLinks(index: index),
-
-        const SizedBox(height: defaultPadding / 2),
       ],
     );
   }
